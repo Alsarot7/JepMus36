@@ -107,7 +107,7 @@ async def play(client, m: Message):
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
 🎧 طلب من : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,                )
 
     else:
@@ -139,7 +139,7 @@ async def play(client, m: Message):
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
 🎧 طلب من : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,
                         )
                     else:
@@ -161,7 +161,7 @@ async def play(client, m: Message):
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
 🎧 طلب من : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,
                             )
                         except Exception as ep:
@@ -204,7 +204,7 @@ async def vplay(client, m: Message):
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
 🎧 طلب من : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,
                 )
             else:
@@ -228,7 +228,7 @@ async def vplay(client, m: Message):
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
 🎧 طلب من : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,                )
 
     else:
@@ -262,7 +262,7 @@ async def vplay(client, m: Message):
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
 🎧 طلب من : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,                        )
                     else:
                         try:
@@ -276,7 +276,7 @@ async def vplay(client, m: Message):
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
 🎧 طلب من : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,                            )
                         except Exception as ep:
                             await huehue.edit(f"`{ep}`")
@@ -318,7 +318,7 @@ async def playfrom(client, m: Message):
 🏷️ العنوان : [{songname}]({link})
 💬 المحادثه : {chat_id}
 🎧 من الطلب : {m.from_user.mention}
-💻 قناة السورس : [ قناة المطور ](t.me/{CHANNEL})**
+💻 قناة السورس : [ {OWNER_NAME} ](t.me/{CHANNEL})**
 """,                    )
             await hmm.delete()
             await m.reply(                f"➕ يضيف {lmt} أغنية في قائمة الانتظار \n• ارسل {HNDLR}التشغيل_التلقائي لاضاف اغنيه في القائمه الانتضار**"            )
