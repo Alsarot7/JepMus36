@@ -68,7 +68,6 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 @Client.on_message(filters.command(["تشغيل"], prefixes=f"{HNDLR}"))
-@authorized_users_only
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -170,7 +169,6 @@ async def play(client, m: Message):
 
 
 @Client.on_message(filters.command(["تشغيل_فيديو"], prefixes=f"{HNDLR}"))
-@authorized_users_only
 async def vplay(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -350,7 +348,6 @@ async def playlist(client, m: Message):
     else:
         await m.reply("**❌ لايوجد هناك تشغيل تالي**")
 @Client.on_message(filters.command(["التالي"], prefixes=f"{HNDLR}"))
-@authorized_users_only
 async def skip(client, m: Message):
     await m.delete()
     chat_id = m.chat.id
