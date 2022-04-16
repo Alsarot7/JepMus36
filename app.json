@@ -1,1 +1,51 @@
-{    "name": "ميـوزك جيبثون",    "description": "اهلا بك في تنصيب ميوزك جيبثون مجانا @Jepthon.",    "logo": "https://telegra.ph/file/cb4eb55eb389e82e8352f.jpg",    "keywords": [        "Telegram",        "MusicPlayer",        "VideoPlayer"    ],    "repository": "https://github.com/USERBOTJEPTHON/Musicjepthon",    "env": {        "SESSION": {            "description": "ضع هنا كود السيشن بايرو",            "required": true        },        "API_ID": {            "description": "ضع هنا كود الايبي ايدي",            "required": true        },        "HNDLR": {            "description": "ضع هنا رمز الامر الذي تريده كمثال ( . - ! - / - $ ) ",            "required": false,            "value": "$"        },        "API_HASH": {            "description": "ضع هنا كود الايبي هاش",            "required": true        },        "SUDO_USERS": {            "description": "ضع هنا ايدي حسابك",            "required": true        }, "OWNER_NAME": {            "description": "ضع هنا اسم المطور",            "required": true        }, "CHANNEL": {            "description": "ضع هنا معرف قناتك بدون علامة @",            "required": true        }, "PHOTO_CH": {            "description": "ضع رابط الصورة تليجراف",            "required": true        }   },    "addons": [],    "buildpacks": [        {            "url": "heroku/python"        },        {            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"        }    ],    "formation": {        "worker": {            "quantity": 1,            "size": "free"        }    },    "stack": "container"}
+{
+    "name": "سورس ميوزك جيبثون",
+    "description": "سورس ميوزك جيبثون",
+    "logo": "https://telegra.ph/file/b0b13433b8595ed385f07.jpg",
+    "keywords": [
+        "Telegram",
+        "MusicPlayer",
+        "jepthon",
+        "VideoPlayer"
+    ],
+    "repository": "https://github.com/lMl10l/MusJep35",
+    "env": {
+        "SESSION": {
+            "description": "هنا ضع كود البايروكرام",
+            "required": true
+        },
+        "API_ID": {
+            "description": "هنا ضع الايبب ايدي",
+            "required": true
+        },
+        "HNDLR": {
+            "description": "العلامه التي تضعها قبل اسم الامر مثل ( $ • -) تستطيع تغييرها ",
+            "required": false,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "هنا ضع الايبي هاش",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "هنا ضع ايدي حسابك كمطور للبوت بمكنك وضع اكثر من شخص بوضع ايدي المستخدم",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
